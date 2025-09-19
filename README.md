@@ -18,14 +18,16 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
 * LLM Model
 * Model Evaluation
 Logistic Regression: 
-              precision    recall  f1-score   support
 
-        Spam       0.98      0.97      0.97       458
-         Ham       0.96      0.98      0.97       439
-
-    accuracy                           0.97       897
-   macro avg       0.97      0.97      0.97       897
-weighted avg       0.97      0.97      0.97       897
+|     |precision | recall | f1-score | support  |
+|:---:|:--------:|:------:|:--------:|:--------:|
+|Spam | 0.98     | 0.97   | 0.97     |  458     |
+|Ham  | 0.96     | 0.98   | 0.97     |  439     |
+|Ham  | 0.96     | 0.98   | 0.97     |  439     |
+|:---:|:--------:|:------:|:--------:|:--------:|
+|accuracy        |      |      | 0.97 | 897     |
+|macro avg       | 0.97 | 0.97 | 0.97 | 897     |
+|weighted avg    | 0.97 | 0.97 | 0.97 | 897     |
 
 LLMs: 
               precision    recall  f1-score   support
