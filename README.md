@@ -17,9 +17,27 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
 * Baseline Model (Logistic Regression)
 * LLM Model
 * Model Evaluation
+Logistic Regression: 
+              precision    recall  f1-score   support
+
+        Spam       0.98      0.97      0.97       458
+         Ham       0.96      0.98      0.97       439
+
+    accuracy                           0.97       897
+   macro avg       0.97      0.97      0.97       897
+weighted avg       0.97      0.97      0.97       897
+
+LLMs: 
+              precision    recall  f1-score   support
+
+        Spam       0.90      0.95      0.93       458
+         Ham       0.95      0.89      0.92       439
+
+    accuracy                           0.92       897
+   macro avg       0.93      0.92      0.92       897
+weighted avg       0.93      0.92      0.92       897
 
 ## References
-
 Zafko. (2025, June 11). PHISHING EMAIL AND SPAM SMS AI DETECTION TOOL. Kaggle. https://www.kaggle.com/code/zafko8/phishing-email-and-spam-sms-ai-detection-tool/notebook
 
 Spam SMS classification using NLP. (2024, September 20). Kaggle. https://www.kaggle.com/datasets/mariumfaheem666/spam-sms-classification-using-nlp
