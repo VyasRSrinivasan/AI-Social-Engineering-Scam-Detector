@@ -11,12 +11,14 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
 - UCI SMS Spam Collection
 
 ## Methodology
-* Load & Combine Datasets
-* Data cleaning
-* Feature extraction
-* Baseline Model (Logistic Regression)
-* LLM Model
-* Model Evaluation
+- Load & Combine Datasets
+- Data cleaning
+- Train/test split
+- Feature extraction
+- Baseline Model (Logistic Regression)
+- LLM Model (Ollama 'mistral')
+- Model Evaluation
+    
     Logistic Regression: 
 
     |                   |precision | recall | f1-score | support  |
@@ -40,12 +42,12 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
     |**weighted avg**   | 0.93     | 0.92   | 0.92     | 897      |
 
 ## References
-Zafko. (2025, June 11). PHISHING EMAIL AND SPAM SMS AI DETECTION TOOL. Kaggle. https://www.kaggle.com/code/zafko8/phishing-email-and-spam-sms-ai-detection-tool/notebook
+*Zafko. (2025, June 11). PHISHING EMAIL AND SPAM SMS AI DETECTION TOOL. Kaggle. https://www.kaggle.com/code/zafko8/phishing-email-and-spam-sms-ai-detection-tool/notebook*
 
-Spam SMS classification using NLP. (2024, September 20). Kaggle. https://www.kaggle.com/datasets/mariumfaheem666/spam-sms-classification-using-nlp
+*Spam SMS classification using NLP. (2024, September 20). Kaggle. https://www.kaggle.com/datasets/mariumfaheem666/spam-sms-classification-using-nlp*
 
-Al-Subaiey, A., Al-Thani, M., Alam, N. A., Antora, K. F., Khandakar, A., & Zaman, S. A. U. (2024, May 19). Novel Interpretable and Robust Web-based AI Platform for Phishing Email Detection. ArXiv.org. https://arxiv.org/abs/2405.11619
+*Al-Subaiey, A., Al-Thani, M., Alam, N. A., Antora, K. F., Khandakar, A., & Zaman, S. A. U. (2024, May 19). Novel Interpretable and Robust Web-based AI Platform for Phishing Email Detection. ArXiv.org. https://arxiv.org/abs/2405.11619*
 
-Spam email classification. (2023, December 22). Kaggle. https://www.kaggle.com/datasets/ashfakyeafi/spam-email-classification
+*Spam email classification. (2023, December 22). Kaggle. https://www.kaggle.com/datasets/ashfakyeafi/spam-email-classification*
 
-UCI SMS Spam collection data set. (2021, June 8). Kaggle. https://www.kaggle.com/datasets/adityakaranth/uci-sms-spam-collection-data-set
+*UCI SMS Spam collection data set. (2021, June 8). Kaggle. https://www.kaggle.com/datasets/adityakaranth/uci-sms-spam-collection-data-set*
