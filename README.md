@@ -14,7 +14,7 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
 ### Load & Combine Datasets
 Loaded and merged all four datasets into one unified dataset with consistent labels (Spam, Ham)
 ### Data cleaning
-- Lowercased, trimmed, whitespace, and eliminated missing values
+- Lowercased, trimmed whitespace, and eliminated missing values
 Mapped *spam* and *ham* labels into binary (Spam = 0, Ham = 1)
 - Balanced the dataset using undersampling to lower bias toward non-spam messages
 ### Train/test split
@@ -43,7 +43,6 @@ Metrics used:
 
 ### Results    
     Logistic Regression: 
-
     |                   |precision | recall | f1-score | support  |
     |:-----------------:|:--------:|:------:|:--------:|:--------:|
     |**Spam**           | 0.98     | 0.97   | 0.97     | 458      |
@@ -54,7 +53,6 @@ Metrics used:
     |**weighted avg**   | 0.97     | 0.97   | 0.97     | 897      |
 
     LLMs: 
-
     |                   |precision | recall | f1-score | support  |
     |:-----------------:|:--------:|:------:|:--------:|:--------:|
     |**Spam**           | 0.90     | 0.95   | 0.93     | 458      |
