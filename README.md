@@ -42,7 +42,9 @@ Metrics used:
 - <u>F1-score</u>: harmonic mean of precision and recall
 
 ### Results    
+
     Logistic Regression: 
+
     |                   |precision | recall | f1-score | support  |
     |:-----------------:|:--------:|:------:|:--------:|:--------:|
     |**Spam**           | 0.98     | 0.97   | 0.97     | 458      |
@@ -53,6 +55,7 @@ Metrics used:
     |**weighted avg**   | 0.97     | 0.97   | 0.97     | 897      |
 
     LLMs: 
+
     |                   |precision | recall | f1-score | support  |
     |:-----------------:|:--------:|:------:|:--------:|:--------:|
     |**Spam**           | 0.90     | 0.95   | 0.93     | 458      |
@@ -61,6 +64,7 @@ Metrics used:
     |**accuracy**       |          |        | 0.92     | 897      |
     |**macro avg**      | 0.93     | 0.92   | 0.92     | 897      |
     |**weighted avg**   | 0.93     | 0.92   | 0.92     | 897      |
+
 
 ### Findings
 1. Logistic Regression achieved a strong performance using TF-IDF features
