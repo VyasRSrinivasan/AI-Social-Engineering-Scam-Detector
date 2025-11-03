@@ -66,7 +66,7 @@ LLMs:
 |**weighted avg**   | 0.93     | 0.92   | 0.92     | 897      |
 
 
-### Findings
+## Findings
 1. Logistic Regression achieved a strong performance using TF-IDF features
 2. LLM ('Mistral') slightly underperformed on overall accuracy but the recall for *Spam* was higher, meaning more scam messages were overlooked.
 3. Results suggest that adopting a hybrid approach in which both models — Logistic Regression and LLMs — are combined to further enhance reliability. 
