@@ -41,7 +41,7 @@ Metrics used:
 - <u>Recall</u>: the number of *spam* messages that were successfully identified
 - <u>F1-score</u>: harmonic mean of precision and recall
 
-### Results    
+## Results    
 
 Logistic Regression: 
 
