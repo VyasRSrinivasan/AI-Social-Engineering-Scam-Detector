@@ -11,14 +11,37 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
 - UCI SMS Spam Collection
 
 ## Methodology
-- Load & Combine Datasets
-- Data cleaning
-- Train/test split
-- Feature extraction
-- Baseline Model (Logistic Regression)
-- LLM Model (Ollama 'mistral')
-- Model Evaluation
-    
+### Load & Combine Datasets
+Loaded and merged all four datasets into one unified dataset with consistent labels (Spam, Ham)
+### Data cleaning
+- Lowercased, trimmed, whitespace, and eliminated missing values
+Mapped *spam* and *ham* labels into binary (Spam = 0, Ham = 1)
+- Balanced the dataset using undersampling to lower bias toward non-spam messages
+### Train/test split
+Split the dataset into 80% training & 20% testing to evaluate generalization performance.
+### Feature extraction
+Applied TF-IDF vectorization to transform raw text messages into numerical feature vectors. 
+Dropped English stopwords to improve model focus on meaningful tokens.
+### Baseline Model (Logistic Regression)
+Trained a Logistic Regression classifier on TF-IDF features.
+Measured accuracy, precision, recall, F1 score, and visualized the confusion matrix.
+This was a benchmark model. 
+### LLM Model (Ollama 'mistral')
+Improved the pipeline by integrating an LLM (Mistral) through Ollama for semantic classification. 
+Used a carefully crafted prompt: 
+
+"Classify the message as exactly one word: \"Spam\" or \"Ham\". Reply with only that word, no punctuation. If unsure, pick the most likely label."
+Tested the LLM's interpretability and compared predictions to the baseline model.
+
+### Model Evaluation
+Generated classification reports for both Logistic Regression and LLM models.
+Metrics used:
+- <u>Accuracy</u>: true predictions out of all predictions made
+- <u>Precision</u>: the number of predicted *spam* messages that were actually *spam*
+- <u>Recall</u>: the number of *spam* messages that were successfully identified
+- <u>F1-score</u>: harmonic mean of precision and recall
+
+### Results    
     Logistic Regression: 
 
     |                   |precision | recall | f1-score | support  |
@@ -40,6 +63,11 @@ The goal of this this scam detection tool is to leverage LLMs paired with machin
     |**accuracy**       |          |        | 0.92     | 897      |
     |**macro avg**      | 0.93     | 0.92   | 0.92     | 897      |
     |**weighted avg**   | 0.93     | 0.92   | 0.92     | 897      |
+
+### Findings
+1. Logistic Regression achieved a strong performance using TF-IDF features
+2. LLM ('Mistral') slightly underperformed on overall accuracy but the recall for *Spam* was higher, meaning more scam messages were overlooked.
+3. Results suggest that adopting a hybrid approach in which both models — Logistic Regression and LLMs — are combined to further enhance reliability. 
 
 ## References
 *Zafko. (2025, June 11). PHISHING EMAIL AND SPAM SMS AI DETECTION TOOL. Kaggle. https://www.kaggle.com/code/zafko8/phishing-email-and-spam-sms-ai-detection-tool/notebook*
