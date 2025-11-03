@@ -43,7 +43,7 @@ Metrics used:
 
 ## Results    
 
-<span style="font-size: 1.5em; font-weight: normal;">Logistic Regression: </span>
+<span style="font-size: 3em; font-weight: normal;">Logistic Regression: </span>
 
 |                   |precision | recall | f1-score | support  |
 |:-----------------:|:--------:|:------:|:--------:|:--------:|
@@ -54,7 +54,7 @@ Metrics used:
 |**macro avg**      | 0.97     | 0.97   | 0.97     | 897      |
 |**weighted avg**   | 0.97     | 0.97   | 0.97     | 897      |
 
-<span style="font-size: 1.5em; font-weight: normal;">LLMs: </span>
+<span style="font-size: 3em; font-weight: normal;">LLMs: </span>
 
 |                   |precision | recall | f1-score | support  |
 |:-----------------:|:--------:|:------:|:--------:|:--------:|
